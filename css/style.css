@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 .container{
-    width: 1050px;
+    width: 1060px;
     margin-top: 165px;
 }
 main{
@@ -232,6 +232,26 @@ form textarea {
 /* -----------------
 from style end 
 ----------------- --*/
+/*------------------
+table style stard  
+-------------------*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table thead tr th{
+    border: 1px solid #ddd;
+    padding:5px 10px 
+}
+table tbody tr td{
+    font-size: 15px;
+    border: 1px solid #ddd;
+    padding:3px 10px ;
+    color: rgb(68 66 66);
+}
+/*------------------
+table style end  
+-------------------*/
 /* -----------------
 footer style stard
 ----------------  */
@@ -255,7 +275,7 @@ footer style stard
     margin-right: 14px;
 }
 .icons a i {
-    padding: 5px;
+   
     height: 32px;
     width: 32px;
     border-radius: 100%;
@@ -273,24 +293,93 @@ footer style stard
 /* ---------------
 footer style end  
 -----------------*/
-/*------------------
-table style stard  
--------------------*/
-table {
-    border-collapse: collapse;
-    width: 100%;
+
+/* media query start  */
+/* mobile devices */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        margin-top: 60px;
+    }
+    /* Copa-America-section stard */
+    .background-color-tag{
+        height:100% ;
+    }
+    .Copa-America-section{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        grid-gap:57px ;
+        justify-items: center;
+        margin-top: 46px;
+        
+    }
+    .Copa-America-contant{
+        width: 274px;
+    }
+    .Copa-America-contant h1{
+        font-size: 36px;
+    }
+    .Copa-America-image img{
+        width: 329px;
+        margin-top:0px;
+    }
+    /* Copa-America-section end */
+    /* player section stard  */
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    /* player section end  */
+    /* play section stard  */
+    .play{
+        flex-direction: column;
+        justify-items: center;
+        margin-top: 0px ;
+    }
+    .play-info{
+        width: 329px;
+        margin-right: 0px ;
+        margin-bottom: 28px;
+    }
+    .play-info h1{
+        width: 298px;
+        font-size: 30px;
+    }
+    .play-image img{
+        width: 328px;
+
+    }
+    /* play section end  */
+   /* form scetion stard  */
+   .form-title{
+       font-size: 22px;
+   }
+  
+   /* form scetion end  */
+   /* table secton stard  */
+   table{
+    width: 50%;
+    margin: auto;
+   }
+   table tbody tr td{
+       padding: 5px ;
+       font-size: 10px ;
+   }
+   table thead tr th{
+    padding: 10px ;
+    font-size: 15px ;
+
+   }
+   /* table secton end  */
+   /* footer section stard  */
+   .footer-contant img{
+       width: 150px;
+
+   }
+   .icons{
+       width: 170px ;
+       margin-top: 29px;
+   }
+   /* footer section end  */
 }
-table thead tr th{
-    border: 1px solid #ddd;
-    padding:5px 10px 
-}
-table tbody tr td{
-    font-size: 15px;
-    border: 1px solid #ddd;
-    padding:3px 10px ;
-    color: rgb(68 66 66);
-    
-}
-/*------------------
-table style end  
--------------------*/
+/* media query end  */
